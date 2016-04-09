@@ -28,24 +28,30 @@ This seems more lightweight than the alternatives such as gnome-power-manager.
 
 ## Redshift (cli/open-source f.lux alternative)
 
-Need this to keep eyes from dying at around 3am.
+Use this to automatically adjust colour temperature in order to prevent eyes from dying late at night.
 
-Use geoclue2 to let redshift detect location or instead provide location through -l LAT:LON.
+Note that this doesn't work with Wayland yet, so no using sway or i3way :(
 
+    dnf install redshift
+
+Use geoclue2 to let redshift detect location 
+
+    dnf install geoclue2
+
+Instead, manually provide location through -l LAT:LON.
+For example:
+    redshift -l 40.1243:9.4040
 
 # Power
 
 ## Power saving
 
 Install tlp and powertop.
-Peek tlp 
+    dnf install tlp powertop
 
-Install tlp.
 Check tlp-stat for suggestions and tlp status.
 It recommends acpi-call - seems to be a debian/ubuntu package not dnf/fedora though.
-    * Install acpi-call kernel module for ThinkPad advanced battery functions
-
-Install powertop
+     * Install acpi-call kernel module for ThinkPad advanced battery functions
 
 ## Suspend on close
 
@@ -77,4 +83,3 @@ Will need to take care if using multiple X sessions because DISPLAY is hardcoded
 Can also set i3lock colour:
 
     ExecStart=/usr/bin/i3lock -c 242424
-
