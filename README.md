@@ -36,7 +36,7 @@ Use geoclue2 to let redshift detect location
 
     dnf install geoclue2
 
-Instead, manually provide location through -l LAT:LON.
+Or instead, manually provide location through -l LAT:LON.
 For example:
     redshift -l 40.1243:9.4040
 
