@@ -38,6 +38,7 @@ Use geoclue2 to let redshift detect location
 
 Or instead, manually provide location through -l LAT:LON.
 For example:
+
     redshift -l 40.1243:9.4040
 
 # Power
