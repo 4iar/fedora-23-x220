@@ -18,8 +18,6 @@ Install drivers
 
 ## Backlight
 
-Can use xbacklight for cli control and sxhkd 
-
 Option 1: bind brightness keys to xbacklight -inc/-dec using sxhkd.
 See http://blog.z3bra.org/2014/04/pop-it-up.html
 
